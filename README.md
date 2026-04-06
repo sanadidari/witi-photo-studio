@@ -1,6 +1,52 @@
-# Shopify App Template for Node
+# 📸 WITI Photo Studio — AI Product Photography for Shopify
 
-This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using Node and React. It contains the basics for building a Shopify app.
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org)
+[![Shopify](https://img.shields.io/badge/Shopify-Embedded%20App-green.svg)](https://shopify.dev)
+[![Replicate](https://img.shields.io/badge/Replicate-SDXL%20+%20remove--bg-purple.svg)](https://replicate.com)
+[![WITI Ecosystem](https://img.shields.io/badge/WITI-Ecosystem-orange.svg)](https://sanadidari.com/witi)
+
+> **WITI Photo Studio** is a Shopify embedded app that transforms raw product photos into professional studio-quality images using AI. It removes backgrounds with **Replicate remove-bg** and generates custom studio environments using **Stable Diffusion XL**.
+
+## ✨ Features
+
+- **One-click background removal** — Powered by `lucataco/remove-bg` on Replicate
+- **AI studio generation** — Custom prompts for marble, wood, gradient, lifestyle backgrounds via SDXL
+- **Shopify native UI** — Built with Polaris design system, embedded directly in merchant dashboard
+- **Before/After preview** — Side-by-side comparison before saving
+
+## 🚀 Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Platform | Shopify Embedded App (CLI v3) |
+| Frontend | React + Shopify Polaris |
+| Backend | Node.js + Express |
+| AI - Background Removal | Replicate `lucataco/remove-bg` |
+| AI - Studio Generation | Replicate `stability-ai/sdxl` |
+| Auth | Shopify OAuth + Session tokens |
+
+## 🎨 How It Works
+
+1. Merchant selects a product image from their Shopify catalog
+2. AI removes the background (Replicate remove-bg)
+3. Merchant chooses a studio style prompt ("marble table, soft lighting")
+4. SDXL generates a photorealistic studio background behind the product
+5. Final image saved back to product listing
+
+## 🌐 Part of the WITI Ecosystem
+
+| App | Description |
+|-----|-------------|
+| [NOUR Mobile](https://github.com/sanadidari/nour-mobile) | Flutter field app for judicial missions |
+| [Governance Engine](https://github.com/sanadidari/governance-platform) | Laravel institutional management |
+| [WITI Social Assistant](https://github.com/sanadidari/witi-social-assistant) | AI social media director for Wix |
+| [WITI Viral Vision](https://github.com/sanadidari/witi-viral-vision) | AI video generator for Wix |
+
+*Developed by [@sanadidari](https://github.com/sanadidari) — Senior Full-Stack Engineer | Founder of Sanadidari SARL*
+
+---
+
+## Original Shopify Template Documentation
 
 Rather than cloning this repo, you can use your preferred package manager and the Shopify CLI with [these steps](#installing-the-template).
 
