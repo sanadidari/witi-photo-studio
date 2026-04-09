@@ -1,5 +1,5 @@
 {
-  "name": "my-node-app",
+  "name": "witi-photo-studio",
   "version": "1.0.0",
   "main": "web/index.js",
   "license": "UNLICENSED",
@@ -9,10 +9,11 @@
     "dev": "shopify app dev",
     "info": "shopify app info",
     "generate": "shopify app generate",
-    "deploy": "shopify app deploy"
+    "deploy": "shopify app deploy",
+    "config:link": "shopify app config link"
   },
   "dependencies": {
-    "@shopify/app": "^3.0.0",
-    "@shopify/cli": "^3.0.0"
+    "@shopify/app": "3.58.2",
+    "@shopify/cli": "3.92.1"
   }
 }
